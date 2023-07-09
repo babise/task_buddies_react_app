@@ -6,8 +6,6 @@ import sassPlugin from "vite-plugin-sass";
 export default defineConfig({
 	plugins: [react(), sassPlugin()],
 	define: {
-		"process.env.API_URL": JSON.stringify(
-			"https://task-buddies-api.vercel.app/api"
-		),
+		"process.env.API_URL": JSON.stringify("http://localhost:8000/api"),
 	},
 });
